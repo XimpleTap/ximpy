@@ -16,7 +16,7 @@ class SocialAuthController extends Controller
 
     public function callback()
     {
-        return redirect()->to('/dashboard');
+        
         $providerUser = \Socialite::driver('facebook')->user();
         $session = [
             'sess_vars'=>$providerUser
@@ -29,7 +29,7 @@ class SocialAuthController extends Controller
          * $user_profile = new UserProfile();
         $profile = $user_profile->get_user_data_via_email($providerUser->email);
         */
-
+        return redirect()->to('/dashboard');
 
     }
 
