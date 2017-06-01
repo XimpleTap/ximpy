@@ -19,7 +19,6 @@ Route::resource('users','UsersController');
 Route::get('/login','LoginController@index');
 Route::post('/process_login','LoginController@process_login');
 Route::get('/redirect', 'SocialAuthController@redirect');
-Route::get('/redirect', 'SocialAuthController@redirect');
 Route::get('/callback', 'SocialAuthController@callback');
 
 Auth::routes();
