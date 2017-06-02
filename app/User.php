@@ -6,6 +6,7 @@ use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\DB;
 
 class User extends Authenticable
 {
@@ -71,15 +72,7 @@ class User extends Authenticable
     }
 
     public function save_fb_returns($data){
-        //dd($data);
-        $user = new User();
-        $token = $data->token;
-        $id = $data->id;
-        $user->facebook_id = $id;
-        $user->facebook_access_token = $token;
-        $status=$user->save();
-        return $status;
-        //test commit
+        DB::statement('CALL INSERT_FB_USER("'.$data->id.'", "'.$data->token.'","'.$data->name.'","'.$data->name.'","'.$data->email.'","asdf","'.$data->avatar_original.'")');
     }
 
 
