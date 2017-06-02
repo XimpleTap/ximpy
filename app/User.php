@@ -78,6 +78,7 @@ class User extends Authenticable
         $user->facebook_access_token = $token;
         $status=$user->save();
         return $status;
+        //test commit
     }
 
 
