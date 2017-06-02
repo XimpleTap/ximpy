@@ -4,10 +4,37 @@
 
 @section('content')
     <div class="row">
-        <div class="col-md-9" >
+        <div class="col-md-2" >
+            <img src="images/fb-share.jpg" class="tmp-fb-share" data-toggle="modal" data-target="#share-modal" />
+        </div>
+        <div id="share-modal" class="modal fade">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title"
+                            id="favoritesModalLabel">Ximpy Reward of the day!</h4>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Would you like to share to your wall the reward you have gained with Ximpy?
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                            <span class="pull-right">
+                            <button type="button" class="btn btn-primary">
+                                Yes
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="col-md-7" >
             @foreach ($cards as $card)
-
                     <div class="col-md-3 ch-cardbox center-block">
                         <div class="ch-cardbox-top">
                             <h4>{{ $card['business'][0]['business_name'] }}</h4>

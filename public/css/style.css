@@ -47,3 +47,16 @@
 .ch-welcome-box{
     background-color:blue;
 }
+
+.tmp-fb-share{
+    height: 30px;
+    width: 80px;
+}
+
+.tmp-fb-share:hover{
+    cursor:hand;
+}
+
+.ch-container-style{
+    padding: 3%;
+}

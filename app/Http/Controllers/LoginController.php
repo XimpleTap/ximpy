@@ -42,6 +42,10 @@ class LoginController extends Controller
         return redirect()->route('login');
     }
 
+    public function test(){
+        echo "test";
+    }
+
 
 
 

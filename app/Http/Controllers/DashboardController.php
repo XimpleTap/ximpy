@@ -31,7 +31,7 @@ class DashboardController extends Controller
                 $compose_array_data = ['card'=>$card,'business'=>$business_data];
                 array_push($new_card_data,$compose_array_data);
             } else{
-                echo "WELCOME! PLEASE AVAIL THE LATEST PROMOS BY USING LOYALTY CARDS OF OUR PARTICIPATING STORES.";
+                //echo "WELCOME! PLEASE AVAIL THE LATEST PROMOS BY USING LOYALTY CARDS OF OUR PARTICIPATING STORES.";
             }
         }
 

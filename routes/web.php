@@ -20,6 +20,7 @@ Route::get('/login','LoginController@index');
 Route::post('/process_login','LoginController@process_login');
 Route::get('/redirect', 'SocialAuthController@redirect');
 Route::get('/callback', 'SocialAuthController@callback');
+Route::get('/test','LoginController@test');
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

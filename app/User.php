@@ -71,6 +71,7 @@ class User extends Authenticable
     }
 
     public function save_fb_returns($data){
+        //dd($data);
         $user = new User();
         $token = $data->token;
         $id = $data->id;
