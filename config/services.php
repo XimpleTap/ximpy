@@ -38,6 +38,7 @@ return [
         'client_id' => '141673663044339',
         'client_secret' => '4a58d06a5dbeaae3e4faaf5c9a0b829d',
         'redirect' => 'https://apps.ximpletap.com/cards/public/callback',
+        //'redirect' => 'http://localhost:8000/callback',
     ],
 
 ];
